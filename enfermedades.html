@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+
+	<head>
+      	<title>Empresa de Salud</title>	
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/estilos.css">
+	</head>
+
+	<body>		
+		<header id="header">
+				<div id="logo">	
+					<a title="Inicio" href="index.html">
+						<img src="img/logo.png">
+					</a>
+				</div>
+
+				<div id="searcher">
+					<input type="text" placeholder="Buscar" class="buscar" list="buscar">
+					<input type="submit" class="boton" value="">
+					<datalist id="buscar">
+						<option value="Inicio">
+						<option value="Vacunas">
+						<option value="Hospitales">
+						<option value="Contacto">
+						<option value="Enfermedades">	
+					  </datalist>
+				</div>
+				
+				<div id="social">
+					<div class="facebook"><a title="Facebook" href="http://www.facebook.com"></a></div>
+					<div class="twitter"><a title="Twitter" href="http://www.twitter.com"></a></div>
+					<div class="instagram"><a title="Instagram" href="http://www.instagram.com"></a></div>
+				</div>
+		</header>
+
+		<div class="flex-container" id="barranav">
+			<div class="navegacion">				
+				<ul>
+					<a title="Inicio" href="index.html">
+						<il>Inicio</il>
+					</a>
+					<a title="Enfermedades" href="enfermedades.html">
+						<il>Enfermedades</il>
+					</a>
+					<a title="Vacunacion" href="calendario-nacional-vacunacion-2020.pdf">
+						<il>Vacunacion</il>
+					</a>
+					<a title="Hospitales" href="hospitales.html">
+						<il>Hospitales</il>
+					</a>	
+					<a title="Contacto" href="contacto.html">
+						<il>Contacto</il>
+					</a>	
+				</ul>
+			</div>
+		</div>
+
+		<div id="filtrar">
+			<div id="searcher">
+				<input type="text" placeholder="Filtrar enfermedades" class="buscar"list="filtros">
+				<input type="submit" class="boton" value="" >
+				<datalist id="filtros">
+					<option value="Coronavirus">
+					<option value="Gripe">
+					<option value="Varicela">
+				  </datalist>
+			</div>
+		</div>
+
+		<div id="lista">
+			<div class="grid-container" id="listado">
+				<div class="imagen">
+					<img src="img/covid2.jpg">
+				</div>
+				<div class="titulo">CORONAVIRUS:</div>
+				<div class="descripcion">
+					Los coronavirus son una extensa familia de virus que pueden 
+					causar enfermedades tanto en animales como en humanos. 
+					En los humanos, se sabe que varios coronavirus causan infecciones respiratorias 
+					que pueden ir desde el resfriado común hasta enfermedades 
+					más graves como el síndrome respiratorio de Oriente Medio (MERS) y el síndrome respiratorio agudo severo (SRAS). 
+					El coronavirus que se ha descubierto más recientemente causa la enfermedad por coronavirus COVID-19.
+					La COVID‑19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente.
+					Tanto este nuevo virus como la enfermedad que provoca eran desconocidos antes de que estallara el brote en Wuhan (China) 
+					en diciembre de 2019.
+					Actualmente la COVID‑19 es una pandemia que afecta a muchos países de todo el mundo.
+				</div>
+				<div class="detalle">
+					<a title="Detalles" href="covid.html">
+						<il>Ver detalle...</il>
+					</a>
+				</div>
+			</div>
+			
+			<div class="grid-container" id="listado">
+				<div class="imagen">
+					<img src="img/gripe.jpg">
+				</div>
+				<div class="titulo">
+					GRIPE:
+				</div>
+				<div class="descripcion">
+					La gripe afecta a los pulmones, la nariz y la garganta. 
+					Los niños pequeños, los adultos de edad avanzada, las mujeres embarazadas y las personas con enfermedades 
+					crónicas o un sistema inmunológico débil corren mayor riesgo.
+					Los síntomas incluyen fiebre, escalofríos, dolores musculares, tos, congestión, secreción nasal, 
+					dolor de cabeza y fatiga.
+					La gripe se trata principalmente con descanso y líquidos para que el cuerpo pueda combatir la infección 
+					por sí solo. Los analgésicos antiinflamatorios de venta libre pueden ayudar con los síntomas. 
+					Una vacuna anual puede prevenir la gripe y limitar sus complicaciones.
+				</div>
+				<div class="detalle">
+					<a title="Detalles" href="https://www.google.com/?hl=es">
+						<il>Ver detalle...</il>
+					</a></div>
+				</div>
+
+			<div class="grid-container" id="listado">
+				<div class="imagen">
+					<img src="img/varicela.jpg">
+				</div>
+				<div class="titulo">
+					VARICELA:
+				</div>
+				<div class="descripcion">
+					Infección viral muy contagiosa que provoca un sarpullido similar a las ampollas en la piel y que da comezón.
+					La varicela puede resultar contagiosa para aquellas personas que no hayan sufrido la enfermedad 
+					o que no se hayan vacunado.
+					El síntoma más característico es un sarpullido con picazón similar a una ampolla en la piel.
+					Es posible prevenir la varicela con una vacuna. El tratamiento suele estar orientado a aliviar los síntomas,
+					aunque los grupos de alto riesgo pueden recibir medicamentos antivirales.
+				</div>
+				<div class="detalle">
+					<a title="Detalles" href="https://www.google.com/?hl=es">
+						<il>Ver detalle...</il>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="flex-container" id="footer">
+				<div class="datos">
+					<ul>Datos del alumno:
+						<il>Abuin Matias Daniel 41745291</il>
+					</ul>	
+				</div>
+				<div class="menu">				
+					<ul>Menú inferior:
+						<a title="Enfermedades" href="enfermedades.html">
+							<il>Enfermedades</il>
+						</a>
+						<a title="Vacunacion" href="vacunas.html">
+							<il>Vacunacion</il>
+						</a>
+						<a title="Hospitales" href="hospitales.html">
+							<il>Hospitales</il>
+						</a>	
+						<a title="Contacto" href="contacto.html">
+							<il>Contacto</il>
+						</a>	
+					</ul>
+				</div>
+		 	</div>
+		</footer>
+	</body>
