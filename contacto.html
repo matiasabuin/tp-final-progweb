@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
-
 	<head>
       	<title>Empresa de Salud</title>	
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/estilos.css">
+		<script src="js/javascript.js"></script>    
 	</head>
 
 	<body>		
@@ -56,33 +56,31 @@
         </div>
 			
 			<div class="flex-container" id="contacto">
-				<div id="contact">
+				<div>
 					<h1>
 						CONTACTO
-					</h1>	
-						
+					</h1>						
 					<form method="get" id="formcontacto">
-						<label>Nombre y Apellido:</label><br/>
-						<input type="text" size="20" maxlength="30" requiered/> <br/>
+						<label>Nombre y Apellido: (*)</label><br/>
+						<input type="text" id="nombre" size="20" maxlength="30" requiered/> <br/>
 						<br/>
 
-						<label>Correo Electrónico:</label> <br/>
-						<input type="email" required /> <br/>
+						<label>Correo Electrónico: (*)</label> <br/>
+						<input type="mail" id="email" required /> <br/>
 						<br/>
 
 						<label>Teléfono:</label> <br/>
-						<input type="text" value="" size="11" maxlength="11" optional/> <br/>
+						<input type="text" id ="tel" size="20" maxlength="9" optional/> <br/>
 						<br/>
 						
 						<label>Consulta:</label><br/>
-						<input type="text" size="80" maxlength="200" requiered/> <br/>
-						<br/>
-							
-						<input type="submit" value="Enviar"/>
-
+						<textarea id="consulta" onkeyup="contadorCaracteres();" rows="6" cols="60" maxlength="1000"></textarea>
+						<p id="caracteresRestantes">1000 caracteres restantes</p> 
+				
+						<input type="submit" value="Enviar" onclick="validarContacto()"/>
 					</form>
 				</div>
-				<div id="datoscontacto">
+				<div>
 					<h1>
 						DATOS DE CONTACTO
 					</h1>
@@ -96,8 +94,11 @@
 				</div>
 			</div>
 
+			<h1 id="titulos">
+				UBICACIÓN
+			</h1>
+
 			<div id="mapa">
-				<h1>UBICACIÓN</h1>
 				<a title="Mapa" href="https://www.google.com.ar/maps/search/hospital/@-34.6708449,-58.6332625,11.5z">
 					<img src="img/mapahospitales.png">
 				</a>

@@ -21,9 +21,7 @@ header{
     width: 500px;
     height: 32px;
     float: left;
-    border-style: solid;
-    border-width: 2px;
-    border-color:black;
+    border: 2px solid black;
     margin-top: 20px;
     margin-left: 30px;
 }
@@ -206,7 +204,7 @@ footer{
 #barranav{
     background-color: rgb(50, 50, 50);
     height: 40px;
-    margin: 0 10px 0 10px;
+    margin: 0 10px 10px 10px;
     font-family: arial;
     color: white;
     padding-top: 2px;
@@ -296,11 +294,9 @@ a:link, a:visited{
     padding: 25px;
 }
 
-
 #testcovid {
     margin: 20px;
     height: 100%;
- 
     padding: 20px;
 }
 
@@ -309,6 +305,12 @@ a:link, a:visited{
     padding: 25px;
     justify-content: space-between;
     grid-gap: 40px;
+}
+
+#sintomas {
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
 }
 
 .sintomas img{
@@ -327,18 +329,26 @@ a:link, a:visited{
     grid-row: 2;
     grid-column: 1;
 }
+
 #testco{
     width: 70%;
 }
 
 #testcovid form{
-    grid-row: 1/span 2;
+    grid-row: 1/span 3;
     grid-column: 2;
 }
 
 #testco{
     font-family: arial;
     font-size: 16px;
+}
+
+#testcovid{
+    flex-wrap: wrap;
+    background-color: rgba(208, 228, 228, 0.26);
+    padding: 20px;
+    margin: 10px 20px 10px 20px;
 }
 
 #presentacion{
@@ -360,9 +370,8 @@ input{
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: center;
-    background-color: rgba(186, 214, 214, 0.193);
-    margin: 15px;
-
+    background-color: rgba(208, 228, 228, 0.26);
+    margin: 10px 20px 10px 20px;
 }
 
 #prevencion img{
@@ -373,8 +382,8 @@ input{
 #mapacercano{
     align-content: space-between;
     justify-content: center;
-    background-color: rgba(186, 214, 214, 0.604);
-    margin: 10px;
+    background: rgba(107, 177, 170, 0.207);
+    margin: 10px 20px 10px 20px;
 }
 
 #mapacercano img{
@@ -385,8 +394,12 @@ input{
 
 #mapa{
     text-align: center;
-    margin: 20px;
+    margin: 10px 20px 10px 20px;
     height: 100%;
+    background-color: rgba(208, 228, 228, 0.26);
+}
+#mapa img{
+    margin: 10px;
 }
 
 #contacto {
@@ -395,8 +408,10 @@ input{
     font-size: 18px;
     padding-top: 10px;
     justify-content:space-around;
-    
+    background-color: rgba(208, 228, 228, 0.26);
+    margin: 5px 20px 10px 20px;
 }
+
 #contacto h1{
     text-align: left;
 }
@@ -408,3 +423,42 @@ input{
 ul{
     padding-left: 0px;
 }
+
+#mostrarPaises{
+    display:none ;
+}
+#mostrarDireccion{
+    display:none ;
+}
+
+#titulos{
+    background-color: rgba(80, 80, 80, 0.95);
+    margin: 5px 20px 5px 20px;
+    padding: 12px;
+    color: whitesmoke;
+}
+
+#caracteresRestantes{
+    font-family: arial;
+    font-size: 18px;
+}
+
+textarea{
+    overflow:hidden;
+    resize:none;
+    font-family: arial;
+    font-size: 16px;
+    border: 2px solid black;
+
+}
+
+#testcovid [type=submit], #contacto input[type=submit]{
+    
+    background-color: rgb(70, 70, 70);
+    border: none;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    margin: 4px 2px 6px 2px;
+    cursor: pointer;
+  }
