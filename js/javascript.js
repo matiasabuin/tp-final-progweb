@@ -202,3 +202,14 @@ function contadorCaracteres()
         document.getElementById("caracteresRestantes").innerHTML = charRemain+' caracteres restantes';
     }
 }
+
+//funcion para el carousel slick
+
+$(document).on('ready', function() {
+	$(".slider").slick({
+	  dots: true,
+	  centerMode: true,
+	});
+  });
+ 
+ 

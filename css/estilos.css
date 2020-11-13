@@ -86,20 +86,6 @@ h1{
     text-align: center;
 }
 
-#slider{   
-    background-color: rgba(105, 170, 164, 0.357);
-    margin: 10px;
-    padding: 25px;
-    height: 350px;
-    text-align: center;
-}
-
-#slider img{  
-    max-width:100%;
-    max-height:100%;
-    opacity: 0.9; 
-}
-
 .flex-container{
     display: flex;
 }
@@ -462,3 +448,47 @@ textarea{
     margin: 4px 2px 6px 2px;
     cursor: pointer;
   }
+
+/* estilos para el carousel slick */
+
+.slider {
+    width: 90%;
+    margin: 15px auto;
+
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+#slider {
+    background: rgba(107, 177, 170, 0.207);
+    margin: 2px 10px 2px 10px;
+}
+
+.slider{
+    padding: 10px;
+}
