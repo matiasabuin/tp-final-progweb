@@ -3,7 +3,12 @@
 	<head>
       	<title>Empresa de Salud</title>	
 		<meta charset="utf-8"/>
+		<link rel="icon" href="img/logo.png">
 		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/estilosModal.css">
+
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/modal.js"></script>
 	</head>
 
 	<body>		
@@ -42,7 +47,7 @@
 					<a title="Enfermedades" href="enfermedades.html">
 						<il>Enfermedades</il>
 					</a>
-					<a title="Vacunacion" href="calendario-nacional-vacunacion-2020.pdf">
+					<a title="Vacunacion" href="calendario.html">
 						<il>Vacunacion</il>
 					</a>
 					<a title="Hospitales" href="hospitales.html">
@@ -53,8 +58,62 @@
 					</a>	
 				</ul>
 			</div>
-        </div>
+		</div>
 		
+		<h1 id="titulos"> 
+			HOSPITALES CON TERAPIAS INTENSIVAS
+		</h1>
+
+	<div id="modalHospitales">
+		
+		<div class="flex-container" id="columnasHospitales">
+			
+			<a id="boxes" href="#dialog" name="modal">Hospital Paroissien</a>
+	
+			<div id="boxes">
+					
+				<div id="dialog" class="window">
+					<p>Dirección: Avenida Brigadier General Juan Manuel de Rosas 6000</p>
+					<p>Localidad: Isidro Casanova, La Matanza</p>
+					<a href="#"class="close"/>Cerrar</a>
+				</div>
+
+				<div id="mask"></div>
+		
+			</div>
+
+			<a id="boxes" href="#dialog1" name="modal">Hospital Italiano de San Justo Agustín Rocca</a>
+		
+			
+			<div id="boxes">
+				<div id="dialog1" class="window">
+					<p>Dirección: Pres. Juan Domingo Perón 2231</p>
+					<p>Localidad: San Justo, La Matanza</p>
+					<a href="#"class="close"/>Cerrar</a>
+				</div>
+
+				<div id="mask"></div>
+			
+			</div>
+
+			<a id="boxes" href="#dialog2" name="modal">Clínica Cruz Celeste</a>
+		
+			<div id="boxes">
+		
+				<div id="dialog2" class="window">
+					<p>Dirección: Bermúdez 2895</p>
+					<p>Localidad: San Justo, La Matanza</p>
+					<a href="#"class="close"/>Cerrar</a>
+				</div>
+
+				<div id="mask"></div>
+			
+			</div>
+
+		</div>
+		
+	</div>
+
 		<h1 id="titulos">
 			MAPA DE HOSPITALES DISPONIBLES
 		</h1>
@@ -77,7 +136,7 @@
 						<a title="Enfermedades" href="enfermedades.html">
 							<il>Enfermedades</il>
 						</a>
-						<a title="Vacunacion" href="calendario-nacional-vacunacion-2020.pdf">
+						<a title="Vacunacion" href="calendario.html">
 							<il>Vacunacion</il>
 						</a>
 						<a title="Hospitales" href="hospitales.html">
