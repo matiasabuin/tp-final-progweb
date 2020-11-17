@@ -155,7 +155,8 @@ h1{
     width: 200px;
     height: 200px;
     max-width:100%;
-    max-height:100%;   
+    max-height:100%;
+    grid-row: 1 / span 2;   
 }
 
 #telefono .item4{
@@ -527,12 +528,12 @@ textarea{
 
     .slick-slide img {
         width: 100%;
-        height: 130px;
+        height: 170px;
     }
     .slider {
         width: 100%;
         margin: 5px;
-        height: 150px;
+        height: 200px;
     }
     .slick-prev:before,
     .slick-next:before {
@@ -540,21 +541,30 @@ textarea{
     }
     #columnas{
         flex-direction: column;
-        align-items: center; 
         margin: 0px;
     }
 
+    #columnas img{
+        align-items: center;
+    }
+
     #telefono .item1{
-        font-size: 25px;
+        font-size: 15px;
+       
     }
     #telefono .item2{
-        font-size: 30px;
+        font-size: 20px;
+        grid-row: 1/ span 2;
+        padding-top: 60px;
+        text-align: left;
     }
     #telefono .item3 img{
-        display: none;
+        height: 60px;
+        padding-top: 25px;
     }
     #telefono .item4{
-        font-size: 100px;
+        font-size: 70px;
+        padding-top: 15px;
     }
     #telefono{
         margin: 10px 0px 0px 0px;
@@ -566,5 +576,20 @@ textarea{
         display: grid;
         grid-gap: 0px;
         padding: 0px;
+    }
+
+    footer{
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+        padding: 0px;
+    }
+
+    #footer {
+        font-size: 15px;
+    }
+
+    #footer il{
+        padding-top: 2px;
+        font-size: 14px;
     }
 }
