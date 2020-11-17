@@ -548,11 +548,20 @@ textarea{
     #columnas{
         flex-direction: column;
         margin: 0px;
+        background-color: rgba(107, 177, 170, 0.207);
+
     }
 
     #columnas img{
         align-items: center;
     }
+    #columnas li{
+        float: right;
+        width: 120px;
+        padding: 10px;
+        margin-top: 60px;
+    }
+
 
     #telefono .item1{
         font-size: 15px;
@@ -576,23 +585,29 @@ textarea{
     #telefono{
         margin: 10px 0px 0px 0px;
         padding: 0px;
-        background: rgba(107, 177, 170, 0.207);
+        background: white;
     }
 
     #telefono .grid-container {
         display: grid;
         grid-gap: 0px;
         padding: 0px;
+        margin: 0px;
+    }
+    #telefono{
+        margin:0px;
     }
 
     footer{
         width: 100%;
-        margin: 10px 0px 0px 0px;
+        margin:0px;
         padding: 0px;
+        
     }
 
     #footer {
         font-size: 15px;
+        margin:0px;
     }
 
     #footer il{
