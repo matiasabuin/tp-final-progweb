@@ -528,7 +528,7 @@ textarea{
 
     #slider {
         margin: 0px;
-        background-color: white;
+        
     }
 
     .slick-slide img {
@@ -539,6 +539,7 @@ textarea{
         width: 100%;
         margin: 0px;
         height: 200px;
+        background-color:rgba(100, 170, 170, 0.200);
     }
     .slick-prev:before,
     .slick-next:before {
@@ -548,12 +549,13 @@ textarea{
     #columnas{
         flex-direction: column;
         margin: 0px;
-        background-color: rgba(107, 177, 170, 0.207);
+        background-color: rgb(201, 201, 201);
 
     }
 
     #columnas img{
         align-items: center;
+    
     }
     #columnas li{
         float: right;
@@ -585,7 +587,7 @@ textarea{
     #telefono{
         margin: 10px 0px 0px 0px;
         padding: 0px;
-        background: white;
+        
     }
 
     #telefono .grid-container {
@@ -596,6 +598,7 @@ textarea{
     }
     #telefono{
         margin:0px;
+        
     }
 
     footer{
@@ -608,9 +611,10 @@ textarea{
     #footer {
         font-size: 15px;
         margin:0px;
+        padding-bottom: 10px;
     }
 
-    #footer il{
+    #footer li{
         padding-top: 2px;
         font-size: 14px;
     }
