@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos relacionados a la barra superior */
+
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+    margin-bottom: 10px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+}
+
+.topnav .search-container {
+    text-align:center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 50%;
+}
+
+.topnav .search-container button {
+    text-align:center;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+.header a .logo {
+    width: 100%;
+}
+
+.logo img{
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.social a{
+    float: right;
+    padding: 4px 6px;
+}
+
+.social{
+    margin: 20px;
+}
+
+/* Estilos relacionados al carousel*/
+
+.carousel {
+    background: #EEE;
+    height: 100%;
+}
+
+.carousel-cell {
+    width: 80%;
+    height: 450px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+}
+
+.carousel-cell img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.flickity-prev-next-button {
+    top: 50%;
+}
+.flickity-page-dots {
+    bottom: -25px;
+}
+
+/* Estilos relacionados al flexbox*/
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: center;
+    justify-content:space-between;
+    margin-top:50px;
+}
+
+.flex-container img{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.flex-container a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-container a:hover {
+    background-color: #ddd;
+    text-decoration: underline;
+}
+  
+.flex-item-left {
+    background-color: #f1f1f1;  
+    flex: 50%;
+}
+  
+.flex-item-mid {
+    background-color: #f1f1f1;  
+    flex: 50%;
+}
+  
+.flex-item-right {
+    background-color: #f1f1f1;
+    flex: 50%;
+}
+
+@media(max-width: 600px) {
+
+/* Estilos en caso de que la pantalla tenga 600px o menos de ancho */
+    
+    .social a{
+        display:none;
+    }
+    .carousel-cell { 
+        width: 90%;
+        height: 70%;
+    }
+    .flickity-prev-next-button {
+        top: 35%;
+    }
+    .flickity-page-dots {
+        bottom: 70px;
+    }
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+        margin-top:-50px;
+    }
+
+    .flex-container img{
+        width: 50%;
+        height: 50%;
+    }
+    .flex-container a{
+        padding:0px;
+    }
+
+}

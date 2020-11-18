@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    
+    <head>
+      	<title>Evaluacion de Aprendizaje</title>	
+        <meta charset="utf-8"/>
+        
+        <link rel="icon" href="img/logo.png">
+
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/flickity.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Viewport para hacerlo responsive -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Estilos para los botones del buscador -->
+
+        <script src="js/javascript.js"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/flickity.pkgd.min.js"></script>
+    
+    </head>
+
+    <body>
+        
+        <!-- Header de la pagina -->
+        <div class="topnav">
+            <a class="logo" href="index.html">
+                <img src="img/logo.png">
+            </a>
+           
+            <div class="social">
+                <a class="Instagram" href="https://www.instagram.com">
+                    <img src="img/instagram.png">
+                </a>
+                <a class="Facebook" href="https://www.facebook.com">
+                    <img src="img/facebook.png">
+                </a>
+                <a class="Twitter" href="https://www.twitter.com">
+                    <img src="img/twitter.png">
+                </a>
+            </div>
+
+            <div class="search-container">
+                <form>
+                    <input type="text" placeholder="Buscar..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+
+            </div>
+            
+        </div>
+
+        <!-- Slider de la pagina -->
+
+        <div class="main-carousel" data-flickity='{ "autoPlay": true , "wrapAround": true}'>
+            <div class="carousel-cell">
+                <a href="covid.html"><img src="img/1.jpg"></a>
+            </div>
+
+            <div class="carousel-cell">
+                <a href="https://www.unlam.edu.ar"><img src="img/2.png"></a>
+            </div>
+
+            <div class="carousel-cell">
+                <a href="https://www.argentina.gob.ar/salud"><img src="img/3.png"></a>
+            </div>
+        </div>
+         
+        <!-- Flexbox mitad de pagina -->
+
+        <div class="flex-container">
+            <div class="flex-item-left">
+                <a href="enfermedades.html">
+                    <img src="img/enfermedades.png"><br/>
+                    Enfermedades
+                </a>     
+            </div>
+            <div class="flex-item-mid">
+                <a href="hospitales.html">
+                    <img src="img/hospitales.png"><br/>
+                    Hospitales
+                </a>
+            </div>
+            <div class="flex-item-right">
+                <a href="vacunas.html">
+                    <img src="img/vacunas.png"><br/>
+                    Vacunas
+                </a>      
+            </div>
+        </div>
+
+    </body>
+
+    
+    
+</html>
