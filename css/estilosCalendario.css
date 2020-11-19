@@ -1,0 +1,41 @@
+body {
+  font: bold 16px sans-serif;
+  margin:0px;
+}
+
+header {
+  z-index: 2;
+}
+
+#calendar {
+  font-size: 14;
+  max-width: 900px;
+  margin: 0 auto;
+  z-index: 0;
+  color: #2c292f;
+}
+
+#calendario{
+  margin:0px;
+  padding: 10px;
+}
+
+#calendario h1{
+  text-align: center;
+  color: white;
+  background-color: #2c292f;
+  margin-top: 5px;
+  font-size: 30px;
+  padding: 5px;
+}
+
+
+@media(max-width: 600px) {
+
+  /* Estilos en caso de que la pantalla tenga 600px o menos de ancho */
+
+  #calendario h1{
+    font-size: 20px;
+  }
+
+}  
