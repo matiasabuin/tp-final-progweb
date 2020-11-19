@@ -37,5 +37,9 @@ header {
   #calendario h1{
     font-size: 20px;
   }
+  #calendar {
+    font: normal 16px sans-serif;
+
+  }
 
 }  
