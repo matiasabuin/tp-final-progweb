@@ -113,3 +113,12 @@
 .nivo-controlNav a.active {
 	font-weight:bold;
 }
+
+@media(max-width: 600px) {
+	.nivoSlider {
+		height: 250px;
+	}
+	.nivoSlider img {
+		max-height: 250px;
+	}
+}

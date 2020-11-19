@@ -108,16 +108,9 @@ Supports Thumbs: true
 	}
 	
 	.nivoSlider {
-		width: 95%;
 		height: 250px;
-		overflow: hidden;
-		margin: auto;
 	}
 	.nivoSlider img {
-		position:absolute;
-		top:0px;
-		left:0px;
-		max-width: none;
 		max-height: 250px;
 	}
 
