@@ -6,7 +6,7 @@
         <meta charset="utf-8"/>
         
         <link rel="icon" href="img/logo.png">
-
+        <script src="js/jquery-3.4.1.min.js"></script>
         <link rel="stylesheet" href="css/estilos.css">
         
         <!-- Viewport para hacerlo responsive -->
@@ -14,17 +14,6 @@
         
         <!-- Fonts para los botones -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <!-- Estilos para el calendario -->
-        <link rel="stylesheet" href="css/estilosCalendario.css">
-        <link rel='stylesheet' href="css/fullcalendar.min.css">
-        <link rel='stylesheet' href="css/fullcalendar.print.min.css" media='print'>
-
-        <!-- Scripts para el calendario -->
-        <script src="js/moment.min.js"></script>
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="js/fullcalendar.min.js"></script>
-        <script src="js/calendario.js"></script>
         
         <!-- Scripts para la barra superior -->
         <script src="js/javascript.js"></script>
@@ -74,18 +63,70 @@
             </a>
         </div>
         
-        
-        <!-- Calendario -->
-      
-        <div id='calendario'> 
+        <!-- Form de contacto -->
+
+        <div class="container">
             <h1>
-                Calendario de vacunas
+                Contacto
             </h1>
-            
-            <div id='calendar'>
-    
-            </div>
-        </div>
+            <form action="action_page.php">
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Nombre: (*)</label>
+                </div>
+
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Escriba su nombre...">
+                </div>     
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Apellido: (*)</label>
+                </div>
+
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Escriba su apellido...">
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                  <label for="mail">E-mail: (*)</label>
+                </div>
+
+                <div class="col-75">
+                   <input type="text" id ="mail" name="mail" placeholder="Escriba su Correo..."/>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                  <label for="telefono">Teléfono:</label>
+                </div>
+
+                <div class="col-75">
+                   <input type="text" id ="tel" name="tel" placeholder="Escriba su número..."/>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Consulta:</label>
+                </div>
+
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Escriba su consulta..." style="height:200px"></textarea>
+                </div>
+              </div>
+
+              <div class="row">
+                <input type="submit" value="Enviar">
+              </div>
+
+            </form>
+          </div>
 
         <!-- Footer de la pagina -->
 

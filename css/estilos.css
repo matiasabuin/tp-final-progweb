@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font: bold 16px sans-serif;
 }
 
 /* Estilos relacionados a la barra superior */
@@ -232,7 +232,7 @@ body {
 .toolbar {
     background-color: #2c292f;
     overflow: hidden;
-    padding-left: 25% ;
+    padding-left: 30% ;
     margin-top: -10px;
 }
 
@@ -254,6 +254,68 @@ body {
 .toolbar .icon {
     display: none;
 }
+
+/* Estilos relacionados al form contacto */
+
+.container input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.container label {
+    padding: 12px 0px 12px 0px;
+    display: inline-block;
+}
+  
+.container input[type=submit] {
+    background-color: #2c292f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 64%;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    font: bold 15px sans-serif;
+}
+  
+.col-25 {
+    float: left;
+    width: 10%;
+    margin-top: 6px;
+    margin-left: 25%;
+}
+  
+.col-75 {
+    float: left;
+    width: 35%;
+    margin-top: 6px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container h1{
+    text-align: center;
+    color: white;
+    background-color: #2c292f;
+    margin-top: 0px;
+    font-size: 20px;
+    padding: 5px;
+  }
+  
+  
 
 @media(max-width: 600px) {
 
@@ -368,7 +430,13 @@ body {
         display: none;
     }
 
-  
+/* Estilos responsive relacionados al form contacto*/
+
+    .col-25, .col-75,.container input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+      }
 
 }
 
