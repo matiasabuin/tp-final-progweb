@@ -69,33 +69,6 @@ body {
     margin: 20px;
 }
 
-/* Estilos relacionados al carousel*/
-
-.carousel {
-    background: #EEE;
-    height: 100%;
-}
-
-.carousel-cell {
-    width: 80%;
-    height: 450px;
-    margin-right: 10px;
-    background: #e9e9e9;
-    border-radius: 5px;
-    counter-increment: gallery-cell;
-}
-
-.carousel-cell img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-.flickity-prev-next-button {
-    top: 50%;
-}
-.flickity-page-dots {
-    bottom: -25px;
-}
 
 /* Estilos relacionados al flexbox*/
 
@@ -105,7 +78,6 @@ body {
     font-size: 18px;
     text-align: center;
     justify-content:space-evenly;
-    margin-top:40px;
     background-color: #f1f1f1;  
     flex: 50%;
     padding:10px;
@@ -386,6 +358,10 @@ body {
 .container img{
     padding-left: 30%;
 }
+
+#nivo-slider {
+    height: 450px;
+    }
     
 @media(max-width: 600px) {
 
@@ -395,25 +371,12 @@ body {
         display:none;
     }
 
-/* Estilos responsive relacionados al carousel*/
-
-    .carousel-cell { 
-        width: 90%;
-        height: 70%;
-    }
-    .flickity-prev-next-button {
-        top: 35%;
-    }
-    .flickity-page-dots {
-        bottom: 70px;
-    }
 
 /* Estilos responsive relacionados al flexbox*/
 
     .flex-container {
         flex-direction: column;
         justify-content: space-between;
-        margin-top:-50px;
         padding-right: 10px;
         
     }

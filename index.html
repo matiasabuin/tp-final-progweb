@@ -9,18 +9,19 @@
 
         <link rel="stylesheet" href="css/estilos.css">
         
-        <!-- Estilos para el slider -->
-        <link rel="stylesheet" href="css/flickity.css">
-       
         <!-- Viewport para hacerlo responsive -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Fonts para los botones -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
+        <!-- Estilos para el slider -->
+        <link rel="stylesheet" href="css/nivo-slider.css"/>
+		<link rel="stylesheet" href="css/default.css"/>
+        
         <!-- Scripts para el slider -->
-        <script src="js/jquery-3.5.1.min.js"></script>
-        <script src="js/flickity.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
     
     </head>
 
@@ -55,21 +56,16 @@
         </div>
     
         <!-- Slider de la pagina -->
+        <section class="contenedor">
+            <article class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <a href="covid.html"><img src="img/1.jpg" title="Informacion sobre el coronavirus"/></a>
+                    <a href="https://www.unlam.edu.ar"><img src="img/2.png" title="Universidad Nacional de La Matanza"/></a>
+                    <a href="https://www.argentina.gob.ar/salud"><img src="img/3.png" title="Ministerio de Salud" /></a>
+                </div>
+            </article>
+        </section>
 
-        <div class="main-carousel" data-flickity='{ "autoPlay": true , "wrapAround": true}'>
-            <div class="carousel-cell">
-                <a href="covid.html"><img src="img/1.jpg"></a>
-            </div>
-
-            <div class="carousel-cell">
-                <a href="https://www.unlam.edu.ar"><img src="img/2.png"></a>
-            </div>
-
-            <div class="carousel-cell">
-                <a href="https://www.argentina.gob.ar/salud"><img src="img/3.png"></a>
-            </div>
-        </div>
-         
         <!-- Flexbox mitad de pagina -->
 
         <div class="flex-container">
