@@ -142,41 +142,23 @@ body {
     
 }
 
-/* Estilos relacionados al flexbox del telefono*/
+/* Estilos relacionados a la franja del telefono*/
 
-.flex-container1 {
-    display: flex;
-    flex-direction: row;
+.phone{
     text-align: center;
-    justify-content:space-around;
-    background-color: #f1f1f1;  
-    flex: 50%;
+}
+.phone h3{
+    font: bold 50px sans-serif;
 }
 
-#telefono h1{
-    font-size: 160px;
-    margin-top: 20px;  
+.phone p{
+    font: bold 70px sans-serif;
+    margin-top: 0px;
 }
 
-#telefono h2{
-    font-size: 80px; 
-    margin-top: 0px;  
-}
-
-#telefono h3{
-    font-size: 35px;   
-}
-
-#telefono{
-    margin-top: 10px;
-    padding: 0px;
-    height: 200px;
-}
-
-#telefono img{
-    max-height: 200px;
-    max-width: 180px;
-    padding-top: 20px;
+.phone img{
+    width: 50px;
+    height: 50px;
 }
 
 /* Estilos relacionados al footer */
@@ -296,34 +278,25 @@ body {
         margin-left: 30px;
     }
 
-/* Estilos responsive relacionados al flexbox del telefono*/
+/* Estilos responsive relacionados a la franja del telefono*/
 
-    #telefono h1{
-        font-size: 45px;
-        margin-top: 5px; 
-    }
+.phone{
+    text-align: center;
+}
+.phone h3{
+    font: bold 24px sans-serif;
+}
+
+.phone p{
+    font: bold 30px sans-serif;
     
-    #telefono h2{
-        font-size: 20px; 
-        margin-top: 0px;
-        
-    }
-    
-    #telefono h3{
-        font-size: 12px;
-        margin-bottom: 5px;
-    }
-    
-    #telefono{
-        margin-top: 10px;
-        padding: 0px;
-        height: 80%;
-        flex-direction: row;
-    }
-    
-    #telefono img{
-        display: none;
-    }
+}
+
+.phone img{
+    width: 25px;
+    height: 25px;
+}
+
 
 /* Estilos responsive relacionados al footer*/
 
