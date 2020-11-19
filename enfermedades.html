@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+    
+    <head>
+      	<title>Evaluacion de Aprendizaje</title>	
+        <meta charset="utf-8"/>
+        
+        <link rel="icon" href="img/logo.png">
+
+        <link rel="stylesheet" href="css/estilos.css">
+        
+        <!-- Viewport para hacerlo responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Fonts para los botones -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Estilos para el calendario -->
+        <link rel="stylesheet" href="css/estilosCalendario.css">
+        <link rel='stylesheet' href="css/fullcalendar.min.css">
+        <link rel='stylesheet' href="css/fullcalendar.print.min.css" media='print'>
+
+        <!-- Scripts para el calendario -->
+        <script src="js/moment.min.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/fullcalendar.min.js"></script>
+        <script src="js/calendario.js"></script>
+        
+        <!-- Scripts para la barra superior -->
+        <script src="js/javascript.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <!-- Header de la pagina -->
+        <div class="topnav">
+            
+            <a class="logo" href="index.html">
+                <img src="img/logo.png">
+            </a>
+           
+            <div class="social">
+                <a class="Instagram" href="https://www.instagram.com">
+                    <img src="img/instagram.png">
+                </a>
+                <a class="Facebook" href="https://www.facebook.com">
+                    <img src="img/facebook.png">
+                </a>
+                <a class="Twitter" href="https://www.twitter.com">
+                    <img src="img/twitter.png">
+                </a>
+            </div>
+
+            <div class="search-container">
+                <form>
+                    <input type="text" placeholder="Buscar..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            
+        </div>
+       
+        <!-- Barra superior -->
+        
+        <div class="toolbar" id="toolbar">
+            <a href="index.html">Inicio</a>
+            <a href="enfermedades.html">Enfermedades</a>
+            <a href="vacunas.html">Vacunas</a>
+            <a href="hospitales.html">Hospitales</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="toolbarResponsive()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
+        
+        <!-- Listado -->
+      
+        <div class="topnav">
+            <div class="search-container" id="filtro">
+                <form>
+                    <input type="text" placeholder="Filtrar enfermedades..." name="search" id="filtro">
+                    <button type="submit" id="filtrobot"><i class="fa fa-search" ></i></button>
+                </form>
+            </div>  
+        </div>
+
+        <div id="lista">
+			<div class="grid-container" id="listado">
+				<div class="imagen">
+					<img src="img/covid2.jpg">
+				</div>
+				<div class="titulo">CORONAVIRUS:</div>
+				<div class="descripcion">
+					Los coronavirus son una extensa familia de virus que pueden 
+					causar enfermedades tanto en animales como en humanos. 
+					En los humanos, se sabe que varios coronavirus causan infecciones respiratorias 
+					que pueden ir desde el resfriado común hasta enfermedades 
+					más graves como el síndrome respiratorio de Oriente Medio (MERS) y el síndrome respiratorio agudo severo (SRAS). 
+					El coronavirus que se ha descubierto más recientemente causa la enfermedad por coronavirus COVID-19.
+					La COVID‑19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente.
+					Tanto este nuevo virus como la enfermedad que provoca eran desconocidos antes de que estallara el brote en Wuhan (China) 
+					en diciembre de 2019.
+					Actualmente la COVID‑19 es una pandemia que afecta a muchos países de todo el mundo.
+				</div>
+				<div class="detalle">
+					<a title="Detalles" href="covid.html">
+						<il>Ver detalle...</il>
+					</a>
+				</div>
+			</div>
+			
+			<div class="grid-container" id="listado">
+				<div class="imagen">
+					<img src="img/gripe.jpg">
+				</div>
+				<div class="titulo">
+					GRIPE:
+				</div>
+				<div class="descripcion">
+					La gripe afecta a los pulmones, la nariz y la garganta. 
+					Los niños pequeños, los adultos de edad avanzada, las mujeres embarazadas y las personas con enfermedades 
+					crónicas o un sistema inmunológico débil corren mayor riesgo.
+					Los síntomas incluyen fiebre, escalofríos, dolores musculares, tos, congestión, secreción nasal, 
+					dolor de cabeza y fatiga.
+					La gripe se trata principalmente con descanso y líquidos para que el cuerpo pueda combatir la infección 
+					por sí solo. Los analgésicos antiinflamatorios de venta libre pueden ayudar con los síntomas. 
+					Una vacuna anual puede prevenir la gripe y limitar sus complicaciones.
+				</div>
+				<div class="detalle">
+					<a title="Detalles" href="https://www.google.com/?hl=es">
+						<il>Ver detalle...</il>
+					</a></div>
+				</div>
+
+			<div class="grid-container" id="listado">
+				<div class="imagen">
+					<img src="img/varicela.jpg">
+				</div>
+				<div class="titulo">
+					VARICELA:
+				</div>
+				<div class="descripcion">
+					Infección viral muy contagiosa que provoca un sarpullido similar a las ampollas en la piel y que da comezón.
+					La varicela puede resultar contagiosa para aquellas personas que no hayan sufrido la enfermedad 
+					o que no se hayan vacunado.
+					El síntoma más característico es un sarpullido con picazón similar a una ampolla en la piel.
+					Es posible prevenir la varicela con una vacuna. El tratamiento suele estar orientado a aliviar los síntomas,
+					aunque los grupos de alto riesgo pueden recibir medicamentos antivirales.
+				</div>
+				<div class="detalle">
+					<a title="Detalles" href="https://www.google.com/?hl=es">
+						<il>Ver detalle...</il>
+					</a>
+				</div>
+			</div>
+		</div>
+
+        <!-- Footer de la pagina -->
+
+        <footer class="footer-distributed">
+
+            <div class="footer-left">
+                <p class="footer-company-about">
+                    <span>Menú Inferior:</span>
+                    <p class="footer-links">
+                        <a href="index.html">Inicio</a>
+                        |
+                        <a href="enfermedades.html">Enfermedades</a>
+                        |
+                        <a href="vacunas.html">Vacunas</a>
+                        |
+                        <a href="hospitales.html">Hospitales</a>
+                        |
+                        <a href="contacto.html">Contacto</a>
+                    </p>
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>Datos del alumno:</span>
+                    Abuin Matias 41745291
+                </p>
+            </div>
+                
+        </footer>
+        
+    </body>
+
+</html>
