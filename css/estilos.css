@@ -138,8 +138,7 @@ body {
 }
 
 .flex-container a:hover {
-    background-color: #ddd;
-    
+    background-color: #ddd; 
 }
 
 /* Estilos relacionados a la franja del telefono*/
@@ -149,11 +148,13 @@ body {
 }
 .phone h3{
     font: bold 50px sans-serif;
+    margin-top: 30px;
 }
 
 .phone p{
     font: bold 70px sans-serif;
     margin-top: 0px;
+    margin-bottom: 30px;
 }
 
 .phone img{
@@ -169,7 +170,7 @@ body {
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-	padding: 50px 50px 60px 50px;
+	padding: 40px 50px 50px 50px;
 }
 
 .footer-distributed .footer-left,
@@ -215,7 +216,7 @@ body {
 	color:  #ffffff;
 	font-size: 15px;
 	font-weight: normal;
-	margin: 0;
+    margin: 0;
 }
 
 .footer-distributed .footer-company-about span{
@@ -278,24 +279,24 @@ body {
         margin-left: 30px;
     }
 
+
 /* Estilos responsive relacionados a la franja del telefono*/
 
-.phone{
-    text-align: center;
-}
-.phone h3{
-    font: bold 24px sans-serif;
-}
+    .phone{
+        text-align: center;
+    }
+    .phone h3{
+        font: bold 24px sans-serif;
+    }
 
-.phone p{
-    font: bold 30px sans-serif;
-    
-}
+    .phone p{
+        font: bold 30px sans-serif;
+    }
 
-.phone img{
-    width: 25px;
-    height: 25px;
-}
+    .phone img{
+        width: 25px;
+        height: 25px;
+    }
 
 
 /* Estilos responsive relacionados al footer*/
@@ -304,9 +305,14 @@ body {
 	.footer-distributed .footer-right{
 		display: block;
 		width: 100%;
-		margin-bottom: 30px;
+		margin-bottom: 0px;
 		text-align: center;
     }
+
+    .footer-distributed{
+        padding: 20px 50px 80px 50px;
+    }
+    
 
 }
 
