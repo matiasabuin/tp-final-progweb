@@ -12,7 +12,7 @@
         <!-- Viewport para hacerlo responsive -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!-- Estilos para los botones del buscador -->
+        <!-- Fonts para los botones -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <!-- Estilos para el calendario -->
@@ -24,7 +24,10 @@
         <script src="js/moment.min.js"></script>
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/fullcalendar.min.js"></script>
-		<script src="js/calendario.js"></script>
+        <script src="js/calendario.js"></script>
+        
+        <!-- Scripts para la barra superior -->
+        <script src="js/javascript.js"></script>
         
     </head>
 
@@ -58,10 +61,22 @@
             
         </div>
        
-        <!-- Calendario -->
-       
-       
+        <!-- Barra superior -->
         
+        <div class="toolbar" id="toolbar">
+            <a href="index.html">Inicio</a>
+            <a href="#">Enfermedades</a>
+            <a href="#vacunas.html">Vacunas</a>
+            <a href="#">Hospitales</a>
+            <a href="#">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="toolbarResponsive()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
+        
+        <!-- Calendario -->
+      
         <div id='calendario'> 
             <h1>
                 Calendario de vacunas
