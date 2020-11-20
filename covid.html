@@ -18,6 +18,8 @@
         <!-- Scripts para la barra superior -->
         <script src="js/javascript.js"></script>
         
+        <script src="js/jquery-3.5.1.min.js"></script>
+        
     </head>
 
     <body>
@@ -66,41 +68,61 @@
         
         <!-- Descripcion -->
       
-        <div id="lista">
-			<div class="grid-container" id="listado">
-				<div class="imagen">
-					<img src="img/covid2.jpg">
-				</div>
-				<div class="titulo">CORONAVIRUS:</div>
-				<div class="descripcion">
-					Los coronavirus son una extensa familia de virus que pueden 
-					causar enfermedades tanto en animales como en humanos. 
-					En los humanos, se sabe que varios coronavirus causan infecciones respiratorias 
-					que pueden ir desde el resfriado común hasta enfermedades 
-					más graves como el síndrome respiratorio de Oriente Medio (MERS) y el síndrome respiratorio agudo severo (SRAS). 
-					El coronavirus que se ha descubierto más recientemente causa la enfermedad por coronavirus COVID-19.
-					La COVID‑19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente.
-					Tanto este nuevo virus como la enfermedad que provoca eran desconocidos antes de que estallara el brote en Wuhan (China) 
-					en diciembre de 2019.
-					Actualmente la COVID‑19 es una pandemia que afecta a muchos países de todo el mundo.
-				</div>
-			</div>
+      <div id="lista">
+        <div class="grid-container" id="listado">
+          <div class="imagen">
+            <img src="img/covid2.jpg">
+          </div>
+          <div class="titulo">CORONAVIRUS:</div>
+          <div class="descripcion">
+            Los coronavirus son una extensa familia de virus que pueden 
+            causar enfermedades tanto en animales como en humanos. 
+            En los humanos, se sabe que varios coronavirus causan infecciones respiratorias 
+            que pueden ir desde el resfriado común hasta enfermedades 
+            más graves como el síndrome respiratorio de Oriente Medio (MERS) y el síndrome respiratorio agudo severo (SRAS). 
+            El coronavirus que se ha descubierto más recientemente causa la enfermedad por coronavirus COVID-19.
+            La COVID‑19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente.
+            Tanto este nuevo virus como la enfermedad que provoca eran desconocidos antes de que estallara el brote en Wuhan (China) 
+            en diciembre de 2019.
+            Actualmente la COVID‑19 es una pandemia que afecta a muchos países de todo el mundo.
+          </div>
         </div>
+      </div>
         
-       <div id="test">
-            Hola usuario! Si tienes síntomas de coronavirus o has estado en
-            contacto con una persona afectada deberías hacer un control y seguimiento
-            diario de tus síntomas.</br></br>
-            Esta aplicación te permitirá hacer un seguimiento de la evolución de los
-            síntomas y te dará las indicaciones y consejos a seguir en cada caso.
-            El uso de este servicio supone la aceptación de los términos y la política de
-            privacidad descritos en 'Ver las condiciones y políticas'.
-       </div>
-       
- 
-       <div class="container">
+      <h1>Sintomas</h1>
+      <div id="sintomas">
+        <img src="img/sintoma1.png">
+        <img src="img/sintoma2.png">
+        <img src="img/sintoma3.png">
+      </div>
 
-        <form action="action_page.php" id="testcovid">
+      <h1>Medidas de prevención</h1>
+      <div id="prevencion">
+        <img src="img/prevencion1.png">
+        <img src="img/prevencion2.png">
+        <img src="img/prevencion3.png">
+        <img src="img/prevencion4.png">
+        <img src="img/prevencion5.png">
+        <img src="img/prevencion6.png">
+        <img src="img/prevencion7.png">
+        <img src="img/prevencion8.png">
+      </div>
+
+      <div id="test">
+        Hola usuario! Si tienes síntomas de coronavirus o has estado en
+        contacto con una persona afectada deberías hacer un control y seguimiento
+        diario de tus síntomas.</br></br>
+        Esta aplicación te permitirá hacer un seguimiento de la evolución de los
+        síntomas y te dará las indicaciones y consejos a seguir en cada caso.
+        El uso de este servicio supone la aceptación de los términos y la política de
+        privacidad descritos en 'Ver las condiciones y políticas'.
+      </div>
+       
+    
+ 
+       <div class="container" id="testcovid">
+
+        <form method="get" >
 
           <div class="row">
             <div class="col25">
@@ -153,79 +175,107 @@
               </select>
             </div>
           </div>
-          
+ 
           <div class="row">
-            <div class="col25">
+            <div class="colu25">
               <label for="sex">Sexo:</label>
             </div>
-            <div class="col75">
+            <div class="colu75">
                 <input type="radio" name="sexo" value="hombre"/> Hombre
                 <input type="radio" name="sexo" value="mujer" /> Mujer
             </div>
           </div>
 
           <div class="row">
-            <div class="col25">
+            <div class="colu25">
               <label for="sex">¿Has viajado al exterior de la República Argentina? (*)</label>
             </div>
+            <div class="colu75">
+                <input type="radio" name="exterior" value="no" onclick="siMostrarPaises()"/> Si
+                <input type="radio" name="exterior" value="si" onclick="noMostrarPaises()" /> No
+            </div>
+          </div>
+         
+          <div class="row" id="exterior">
+            <div class="col25">
+              <label for="exterior" >Pais al que viajo:</label>
+            </div>
             <div class="col75">
-                <input type="radio" name="sexo" value="no"/> Si
-                <input type="radio" name="sexo" value="si" /> No
+              <select  name="country">
+                <option value="australia">Japon</option>
+                <option value="canada">China</option>
+              </select>
             </div>
           </div>
 
           <div class="row">
-            <div class="col25">
+            <div class="colu25">
               <label for="sex">¿Tuviste Fiebre mayor a 38 grados? (*)</label>
             </div>
-            <div class="col75">
-                <input type="radio" name="sexo" value="no"/> Si
-                <input type="radio" name="sexo" value="si" /> No
+            <div class="colu75">
+                <input type="radio" name="fiebre" id="fiebreSi" value="no"/> Si
+                <input type="radio" name="fiebre" id="fiebreNo" value="si" /> No
             </div>
           </div>
 
           <div class="row">
-            <div class="col25">
+            <div class="colu25">
               <label for="sex">¿Tuviste Dolor de cabeza? (*)</label>
             </div>
-            <div class="col75">
-                <input type="radio" name="sexo" value="no"/> Si
-                <input type="radio" name="sexo" value="si" /> No
+            <div class="colu75">
+                <input type="radio" name="cabeza" id="cabezaSi"value="no"/> Si
+                <input type="radio" name="cabeza" id="fiebreNo" value="si" /> No
             </div>
           </div>
 
           <div class="row">
-            <div class="col25">
+            <div class="colu25">
               <label for="sex">¿Tuviste una tos persistente? (*)</label>
             </div>
-            <div class="col75">
-                <input type="radio" name="sexo" value="no"/> Si
-                <input type="radio" name="sexo" value="si" /> No
+            <div class="colu75">
+                <input type="radio" name="tos" id="tosSi" value="no"/> Si
+                <input type="radio" name="tos" id="tosNo" value="si" /> No
             </div>
           </div>
 
           <div class="row">
-            <div class="col25">
+            <div class="colu25">
               <label for="sex">¿Tuviste Dolor de garganta? (*)</label>
             </div>
-            <div class="col75">
-                <input type="radio" name="sexo" value="no"/> Si
-                <input type="radio" name="sexo" value="si" /> No
+            <div class="colu75">
+                <input type="radio" name="garganta" id="gargantaSi" value="no"/> Si
+                <input type="radio" name="garganta" id="gargantaNo" value="si" /> No
             </div>
           </div>
 
           <div class="row">
-            <div class="col25">
+            <div class="colu25">
               <label for="sex">¿Tuviste Dificultad para respirar? (*)</label>
             </div>
-            <div class="col75">
-                <input type="radio" name="sexo" value="no"/> Si
-                <input type="radio" name="sexo" value="si" /> No
+            <div class="colu75">
+                <input type="radio" name="respirar" id="respirarSi" value="no" onclick="siMostrarDireccion()"/> Si
+                <input type="radio" name="respirar" id="respirarNo" value="si" onclick="noMostrarDireccion()"/> No
             </div>
           </div>
 
+          <div class="row" id="direccion">
+            <div class="col25">
+              <label for="exterior" >Direccion: (*)</label>
+            </div>
+            <div class="col75">
+              <input type="text" id ="dir" name="dir" placeholder="Escriba su direccion..."/>
+            </div>
+          </div>
+
+          <div class="row" id="valcovid">
+            <input id="enviartest" type="submit" value="Enviar" onclick="validar()">
+          </div>
 
         </form>
+
+
+       
+
       </div>
 
 
