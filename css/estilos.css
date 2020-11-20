@@ -725,7 +725,11 @@ h1 {
     #prevencion {
         margin-left: 0%;
     }
-        
+    #valcovid input[type=submit] {
+        margin-left: 0%;
+        width: 100%;
+
+    }
 }
 
 
