@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+    
+    <head>
+      	<title>Evaluacion de Aprendizaje</title>	
+        <meta charset="utf-8"/>
+        
+        <link rel="icon" href="img/logo.png">
+
+        <link rel="stylesheet" href="css/estilos.css">
+        
+        <!-- Viewport para hacerlo responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Fonts para los botones -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          
+        <!-- Scripts para la barra superior -->
+        <script src="js/javascript.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <!-- Header de la pagina -->
+        <div class="topnav">
+            
+            <a class="logo" href="index.html">
+                <img src="img/logo.png">
+            </a>
+           
+            <div class="social">
+                <a class="Instagram" href="https://www.instagram.com">
+                    <img src="img/instagram.png">
+                </a>
+                <a class="Facebook" href="https://www.facebook.com">
+                    <img src="img/facebook.png">
+                </a>
+                <a class="Twitter" href="https://www.twitter.com">
+                    <img src="img/twitter.png">
+                </a>
+            </div>
+
+            <div class="search-container">
+                <form>
+                    <input type="text" placeholder="Buscar..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            
+        </div>
+       
+        <!-- Barra superior -->
+        
+        <div class="toolbar" id="toolbar">
+            <a href="index.html">Inicio</a>
+            <a href="enfermedades.html">Enfermedades</a>
+            <a href="vacunas.html">Vacunas</a>
+            <a href="hospitales.html">Hospitales</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="toolbarResponsive()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
+        
+        <!-- Descripcion -->
+      
+        <div id="lista">
+			<div class="grid-container" id="listado">
+				<div class="imagen">
+					<img src="img/covid2.jpg">
+				</div>
+				<div class="titulo">CORONAVIRUS:</div>
+				<div class="descripcion">
+					Los coronavirus son una extensa familia de virus que pueden 
+					causar enfermedades tanto en animales como en humanos. 
+					En los humanos, se sabe que varios coronavirus causan infecciones respiratorias 
+					que pueden ir desde el resfriado común hasta enfermedades 
+					más graves como el síndrome respiratorio de Oriente Medio (MERS) y el síndrome respiratorio agudo severo (SRAS). 
+					El coronavirus que se ha descubierto más recientemente causa la enfermedad por coronavirus COVID-19.
+					La COVID‑19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente.
+					Tanto este nuevo virus como la enfermedad que provoca eran desconocidos antes de que estallara el brote en Wuhan (China) 
+					en diciembre de 2019.
+					Actualmente la COVID‑19 es una pandemia que afecta a muchos países de todo el mundo.
+				</div>
+			</div>
+        </div>
+        
+       <div id="test">
+            Hola usuario! Si tienes síntomas de coronavirus o has estado en
+            contacto con una persona afectada deberías hacer un control y seguimiento
+            diario de tus síntomas.</br></br>
+            Esta aplicación te permitirá hacer un seguimiento de la evolución de los
+            síntomas y te dará las indicaciones y consejos a seguir en cada caso.
+            El uso de este servicio supone la aceptación de los términos y la política de
+            privacidad descritos en 'Ver las condiciones y políticas'.
+       </div>
+       
+ 
+       <div class="container">
+
+        <form action="action_page.php" id="testcovid">
+
+          <div class="row">
+            <div class="col25">
+              <label for="fname">Nombre: (*)</label>
+            </div>
+
+            <div class="col75">
+              <input type="text" id="fname" name="firstname" placeholder="Escriba su nombre...">
+            </div>     
+          </div>
+
+          <div class="row">
+            <div class="col25">
+              <label for="lname">Apellido: (*)</label>
+            </div>
+
+            <div class="col75">
+              <input type="text" id="lname" name="lastname" placeholder="Escriba su apellido...">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col25">
+              <label for="dni">DNI: (*)</label>
+            </div>
+
+            <div class="col75">
+               <input type="text" id ="dni" name="dni" placeholder="Escriba su número de DNI..."/>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col25">
+              <label for="tel">Teléfono: (*)</label>
+            </div>
+
+            <div class="col75">
+               <input type="text" id ="tel" name="tel" placeholder="Escriba su número de teléfono..."/>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col25">
+              <label for="country">Ciudad:</label>
+            </div>
+            <div class="col75">
+              <select id="country" name="country">
+                <option value="australia">Buenos Aires</option>
+                <option value="canada">La Plata</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col25">
+              <label for="sex">Sexo:</label>
+            </div>
+            <div class="col75">
+                <input type="radio" name="sexo" value="hombre"/> Hombre
+                <input type="radio" name="sexo" value="mujer" /> Mujer
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col25">
+              <label for="sex">¿Has viajado al exterior de la República Argentina? (*)</label>
+            </div>
+            <div class="col75">
+                <input type="radio" name="sexo" value="no"/> Si
+                <input type="radio" name="sexo" value="si" /> No
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col25">
+              <label for="sex">¿Tuviste Fiebre mayor a 38 grados? (*)</label>
+            </div>
+            <div class="col75">
+                <input type="radio" name="sexo" value="no"/> Si
+                <input type="radio" name="sexo" value="si" /> No
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col25">
+              <label for="sex">¿Tuviste Dolor de cabeza? (*)</label>
+            </div>
+            <div class="col75">
+                <input type="radio" name="sexo" value="no"/> Si
+                <input type="radio" name="sexo" value="si" /> No
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col25">
+              <label for="sex">¿Tuviste una tos persistente? (*)</label>
+            </div>
+            <div class="col75">
+                <input type="radio" name="sexo" value="no"/> Si
+                <input type="radio" name="sexo" value="si" /> No
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col25">
+              <label for="sex">¿Tuviste Dolor de garganta? (*)</label>
+            </div>
+            <div class="col75">
+                <input type="radio" name="sexo" value="no"/> Si
+                <input type="radio" name="sexo" value="si" /> No
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col25">
+              <label for="sex">¿Tuviste Dificultad para respirar? (*)</label>
+            </div>
+            <div class="col75">
+                <input type="radio" name="sexo" value="no"/> Si
+                <input type="radio" name="sexo" value="si" /> No
+            </div>
+          </div>
+
+
+        </form>
+      </div>
+
+
+        <!-- Footer de la pagina -->
+
+        <footer class="footer-distributed">
+
+            <div class="footer-left">
+                <p class="footer-company-about">
+                    <span>Menú Inferior:</span>
+                    <p class="footer-links">
+                        <a href="index.html">Inicio</a>
+                        |
+                        <a href="enfermedades.html">Enfermedades</a>
+                        |
+                        <a href="vacunas.html">Vacunas</a>
+                        |
+                        <a href="hospitales.html">Hospitales</a>
+                        |
+                        <a href="contacto.html">Contacto</a>
+                    </p>
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>Datos del alumno:</span>
+                    Abuin Matias 41745291
+                </p>
+            </div>
+                
+        </footer>
+        
+    </body>
+
+</html>
