@@ -1,8 +1,13 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
+
 body {
     margin: 0;
+    margin-bottom: 250px;
     font: bold 16px sans-serif;
 }
-
 /* Estilos relacionados a la barra superior */
 
 .topnav {
@@ -139,6 +144,11 @@ body {
 /* Estilos relacionados al footer */
 
 .footer-distributed{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #2c3440;
+    padding-top: 10px;
 	background-color: #2c292f;
 	box-sizing: border-box;
 	width: 100%;
